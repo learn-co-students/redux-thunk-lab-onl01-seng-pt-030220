@@ -17,6 +17,7 @@ class App extends Component {
       <div className="App">
         <h1>CatBook</h1>
         {/* missing component */}
+        {this.props.loading ? "Loading..." : null}
         <CatList catPics={this.props.catPics}/>
       </div>
     );
